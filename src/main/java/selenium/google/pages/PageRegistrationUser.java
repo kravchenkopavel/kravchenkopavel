@@ -73,7 +73,7 @@ public class PageRegistrationUser {
     //return the part of the text's on the page that opens
     public String getResult(){return driver.findElement(signupidv).getText();}
 
-    //this method use in the test RegistrationUserTest
+    //this method use in the test TestRegistrationUser
     public void registrationUser(String strfirstname, String strlastname, String strgmailaddress, String strpasswd,
                                  String strpasswdagain, String strbirthday, String monthnumber, String strbirthyear,
                                  Boolean man){

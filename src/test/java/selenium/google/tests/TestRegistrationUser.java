@@ -25,7 +25,7 @@ public class TestRegistrationUser {
     }
 
     @Test
-    public void fullRightRegistrationTest(){
+    public void TestFullRightRegistration(){
         objRegistration = new PageRegistrationUser(driver);
         objRegistration.registrationUser("Pavel", "Nevajno", "rrrooopppopop", "hj,jnsikt,fns", "hj,jnsikt,fns",
                 "23", "7", "1990", true);

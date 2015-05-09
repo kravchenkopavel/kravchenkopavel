@@ -16,7 +16,7 @@ public class TestLoginUser {
     PageLoginUser objLogin;
 
     @Test
-    public void LoginUserTestIncorrect(){
+    public void TestLoginUserIncorrect(){
         driver = new FirefoxDriver();
         driver.get("https://accounts.google.com/ServiceLoginAuth");
         objLogin = new PageLoginUser(driver);
@@ -26,7 +26,7 @@ public class TestLoginUser {
     }
 
     @Test
-    public void LoginUserTestCorrect(){
+    public void TestLoginUserCorrect(){
         driver = new FirefoxDriver();
         driver.get("https://accounts.google.com/ServiceLoginAuth");
         objLogin = new PageLoginUser(driver);
