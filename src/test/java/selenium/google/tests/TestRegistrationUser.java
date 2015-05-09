@@ -6,13 +6,13 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import selenium.google.pages.RegistrationUserPage;
+import selenium.google.pages.PageRegistrationUser;
 /**
  * Created by Kravchenko Pavel on 09.05.2015.
  */
-public class RegistrationUserTest {
+public class TestRegistrationUser {
     WebDriver driver;
-    RegistrationUserPage objRegistration;
+    PageRegistrationUser objRegistration;
 
     @BeforeTest
     public void setup(){
@@ -26,7 +26,7 @@ public class RegistrationUserTest {
 
     @Test
     public void fullRightRegistrationTest(){
-        objRegistration = new RegistrationUserPage(driver);
+        objRegistration = new PageRegistrationUser(driver);
         objRegistration.registrationUser("Pavel", "Nevajno", "rrrooopppopop", "hj,jnsikt,fns", "hj,jnsikt,fns",
                 "23", "7", "1990", true);
         Assert.assertTrue(objRegistration.getResult().contains("Подтвердите аккаунт"));

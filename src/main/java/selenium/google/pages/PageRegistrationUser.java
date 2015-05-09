@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 /**
  * Created by Kravchenko Pavel on 09.05.2015.
  */
-public class RegistrationUserPage {
+public class PageRegistrationUser {
 
     WebDriver driver;
 
@@ -26,7 +26,7 @@ public class RegistrationUserPage {
     By signupidv = By.cssSelector(".redtext");
 
     //driver
-    public RegistrationUserPage(WebDriver driver){this.driver = driver;}
+    public PageRegistrationUser(WebDriver driver){this.driver = driver;}
 
     //set firstname in textbox
     public void setFirstName(String strfirstname){driver.findElement(firstname).sendKeys(strfirstname);}
