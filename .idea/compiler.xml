@@ -25,5 +25,8 @@
         <module name="Automation QA" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Automation QA" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
