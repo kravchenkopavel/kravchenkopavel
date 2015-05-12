@@ -13,13 +13,14 @@ public class NewTest {
     NewPage objTest;
 
     @Test
-    public void Test(){
+    public void Test() throws InterruptedException {
         driver = new FirefoxDriver();
         driver.get("https://www.google.ru/?gws_rd=ssl");
         objTest = new NewPage(driver);
         //objTest.loginUser("rrrooopppopop", "Nevajno");
-        //objTest.getText();
-        Assert.assertTrue(objTest.getText().contains("Play"));
+        //objTest.wait(1000);
+        objTest.getTex();
+        //Assert.assertTrue(objTest.getText().contains("Play"));
 
         //driver.quit();
     }
